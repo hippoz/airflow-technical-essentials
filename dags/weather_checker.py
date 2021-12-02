@@ -6,6 +6,7 @@ TODO:
         - Host: https://api.weather.gov/points/
     - Add weather_coordinates variable to Variables from Web UI
         - Format: 39.7456,-97.0892
+        - San Francisco: 37.6689,-122.4044
 """
 import json
 from datetime import datetime
@@ -23,7 +24,7 @@ default_args = {
 }
 
 dag = DAG(
-    dag_id='weather_checker',
+    dag_id='astra_weather_checker',
     description='Check the weather',
     schedule_interval='0 0 * * 1', # midnight on Mondays
     default_args=default_args,

@@ -14,7 +14,7 @@ default_args = {
 }
 
 dag = DAG(
-    dag_id='example_dag',
+    dag_id='astra_example_dag',
     description='Just an example DAG',
     start_date=datetime(2021, 1, 1),
     schedule_interval='0 0 * * *',
